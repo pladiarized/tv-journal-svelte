@@ -24,6 +24,7 @@
 
 </script>
 
+<div class="main">
 <input 
     type="text" 
     placeholder="Show Title"
@@ -42,3 +43,23 @@
 <button disabled={!title} on:click={submitShow}>
     Submit
 </button>
+
+</div>
+
+<style>
+    .main {
+      width: 100%;
+      display: flex;
+    }
+    .main input {
+      flex: 1;
+    }
+    .main select {
+      width: 75px;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+    .main button {
+      width: 75px;
+    }
+</style>
